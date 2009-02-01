@@ -4,13 +4,11 @@ require 'vendor/faker/lib/faker.rb'
 
 path = "/home/jmcanally/tweetprompt.com/current"
 
-configure do
-  set :root, path
-  set :views, path + '/views'
-  set :public, path + '/public'
-  set :run, false
-  set :environment, :production
-end
+set :root, path
+set :views, path + '/views'
+set :public, path + '/public'
+set :environment, :production
+disable :run
 
 require 'app.rb'
 run Sinatra::Application

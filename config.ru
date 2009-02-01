@@ -4,13 +4,13 @@ require 'vendor/faker/lib/faker.rb'
 
 path = "/home/jmcanally/tweetprompt.com/current"
 
-Sinatra::Application.default_options.merge!(
-  :root => path,
-  :views => path + '/views',
-  :public => path + '/public',
-  :run => false,
-  :env => :production
-)
+configure do
+  set :root, path
+  set :views, path + '/views'
+  set :public, path + '/public'
+  set :run, false,
+  set :environment, :production
+end
 
 require 'app.rb'
-run Sinatra.application
+run Sinatra::Application

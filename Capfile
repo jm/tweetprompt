@@ -18,7 +18,7 @@ set :git_shallow_clone, 1
 set :scm_verbose, true
 set :use_sudo, false
 
-server "jeremymcanally.com", :app, :web
+server "tweetprompt.com", :app, :web
 
 namespace :deploy do
   task :restart do

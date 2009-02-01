@@ -18,7 +18,7 @@ set :git_shallow_clone, 1
 set :scm_verbose, true
 set :use_sudo, false
 
-server domain, :app, :web
+server "jeremymcanally.com", :app, :web
 
 namespace :deploy do
   task :restart do

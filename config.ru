@@ -8,7 +8,7 @@ configure do
   set :root, path
   set :views, path + '/views'
   set :public, path + '/public'
-  set :run, false,
+  set :run, false
   set :environment, :production
 end
 

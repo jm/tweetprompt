@@ -116,7 +116,7 @@ I_THINK_PROMPTS = ["Obama", "America", "people", "hipsters", "punks", "pastries"
 
 # Build 'em all up
 PROMPTS = ITUNES_PROMPTS + name_prompts + ADJECTIVE_PROMPTS + LAST_TIME_PROMPTS + NEXT_TIME_PROMPTS + BAD_EXPERIENCE_PROMPTS + GOOD_EXPERIENCE_PROMPTS + GOOD_PROMPTS + FAIL_PROMPTS + I_THINK_PROMPTS + LOVE_PROMPTS + HATE_PROMPTS + personal_prompts + rock_prompts + RANDOM_PROMPTS
-puts "rolling with #{PROMPTS.length} prompts"
+# puts "rolling with #{PROMPTS.length} prompts"
 
 # Randomize again!!
 srand(Time.now.to_i / (rand))

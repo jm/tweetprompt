@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>tweetPrompt</title>
+  </head>
+  
+  <style>
+    BODY {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background: #261b0c;
+      text-align: center;
+    }
+    
+    #banner {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      font-size: 8pt;
+      color: #433a30;
+    }
+    
+    #banner a {
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px dotted #433a30;
+    }
+    
+    #banner p {
+      line-height: 11pt;
+      margin-bottom: 0px;
+    }
+    
+    #prompt {
+      font-size: 56pt;
+      color: #f1f1f1;
+      width: 70%;
+      font-weight: bold;
+      margin: auto;
+      margin-top: 50px;
+      text-shadow: #160b0c 2px 3px 3px;
+    }
+    
+    #prompt a {
+      color: #f1f1f1;
+      text-decoration: none;
+    }
+    
+    .no-border {
+      border: 0px !important;
+    }
+  </style>
+  
+  <body>
+    <div id="prompt">
+      <%= yield %>
+    </div>
+    
+    <div id="banner">
+      <a href="/" class="no-border"><img src="/images/banner.png" /></a><br />
+      <p>
+      click the prompt to tweet it<br />
+      click the banner to get another prompt<br />
+      a production of <a href="http://twitter.com/jeremymcanally">@jeremymcanally</a> at <a href="http://entp.com/">entp</a>
+      </p>
+    </div>
+  </body>
+</html>
